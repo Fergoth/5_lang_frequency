@@ -12,15 +12,14 @@ def load_data(filepath):
         print('Файл не найден')
 
 
-def get_most_frequent_words(text):
+def get_most_frequent_words(text, n_first_words=10):
     words = re.findall(r'\w+', text)
-    return Counter(words).most_common(10)
+    return Counter(words).most_common(n_first_words)
 
 
 def print_counter(count_object):
     for word, freq in count_object:
         print('слово "{}" встречается {} раз'.format(word, freq))
-
 
 
 if __name__ == '__main__':
