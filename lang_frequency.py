@@ -16,7 +16,7 @@ def get_most_frequent_words(text, n_first_words=10):
 
 def print_counter(count_object):
     print('{:^20} {:^10}'.format('Слово', 'Частота'))
-    print('_'*30)
+    print('_' * 30)
     for word, freq in count_object:
         print('{:^20}|{:^10}'.format(word, freq))
 
